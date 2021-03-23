@@ -1,6 +1,4 @@
-# Weekend Challenge #5 - Real Estate Listings
 
-A Prime Digital Academy challenge for creating a full stack MEAN application that displays of list of real estate listings and giving a user the option to add, delete, or edit listings. 
 
 ## Getting Started
 
@@ -59,4 +57,4 @@ There is no need to do any initial setup on the database. The following commands
 
 ## Authors
 
-* **Sam Fortin** - [Github](https://github.com/sjfortin)
+* **janssen koubkinai** - [Github](https://github.com/janssenkoubikani/)
