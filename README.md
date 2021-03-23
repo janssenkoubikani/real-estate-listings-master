@@ -10,8 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 Run dockerized application:
 
 ```
-docker-compose up -d
+docker-compose up -d --build
 ```
+
+You can visit http://localhost:8082  or http://135.125.106.207:8082 to see the application in action.
 
 ### Afterwards, execute the following command to check if the application and Mongo DB container are running.
 
@@ -57,4 +59,4 @@ docker-compose logs -f database
 
 ## Authors
 
-* **janssen koubkinai** - [Github](https://github.com/janssenkoubikani/)
+* **janssen koubikani** - [Github](https://github.com/janssenkoubikani/)
