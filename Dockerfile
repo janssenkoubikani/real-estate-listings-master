@@ -17,9 +17,6 @@ COPY . /usr/src/app/
 # Install any needed packages specified in package.json
 RUN npm install
 
-RUN ls /usr/src/app
-RUN ls /usr/src/app/public
-
 EXPOSE 5000
 
 # Periodically check if the application is running. If not, shutdown the

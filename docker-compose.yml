@@ -14,7 +14,7 @@ services:
       # Add the db-init.js file to the Mongo DB container
       - ./db-init.js:/docker-entrypoint-initdb.d/init.js:ro
     ports:
-      - '27017-27019:27017-27019'
+      - '8080:8080'
 
   mongo-express:
     image: mongo-express

@@ -13,36 +13,36 @@ Run dockerized application:
 docker-compose up -d
 ```
 
-Import data:
+### Afterwards, execute the following command to check if the application and Mongo DB container are running.
+
+```
+docker-compose ps
+```
+
+### Import data:
 
 ```
 docker-compose exec database mongoimport --host mongodb  --db realestate --collection rentals --file /dump/scripts/rentalData.js
 docker-compose exec database mongoimport --host mongodb  --db realestate --collection listings --file /dump/scripts/listingData.js
 ```
 
+ ### if you wish to see the logs and output for the application and/or MongoDB, run the following command:
 
-### Installing the normal way (without Docker)
-
-Get the app running by first installing the dependencies
-
+# See logs for all services
 ```
-npm install
+docker-compose logs -f
 ```
-
-To run the app running on localhost:5000
-
+# See logs for only the application service
 ```
-npm start
+docker-compose logs -f web
 ```
 
-## Importing the Provided Data File
+# See logs for only the MongoDB service
+```
+docker-compose logs -f database
+```
 
-There is no need to do any initial setup on the database. The following commands will create the **database**, **collections** and **documents** automatically! 
 
-1. Download the r.
-2. In Terminal, navigate the `server/data` folder so that you have access to the *listingData.js* and *rentalData.js* files.
-3. Run this command in your Terminal: `mongoimport --db realestate --collection rentals --file rentalData.js`
-4. Run this command in your Terminal: `mongoimport --db realestate --collection listings --file listingData.js`
 
 ## Built With
 
